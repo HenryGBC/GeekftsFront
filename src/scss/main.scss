@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+body{
+    background: #e6e6e6;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #161621;
+    strong{
+        font-weight: bold;
+    }
+}
+
+
+
+.logo-css{
+    display: flex;
+
+    .letter-g{
+        width: 115px;
+        height: 115px;
+        position: relative;
+        img{
+            position: absolute;
+            width: 80px;
+            top: 104px;
+            transform: rotate(163deg);
+            right: 16px;
+        }
+
+        .circle{
+            width: 60px;
+            height: 60px;
+            border: 20px solid #00DAE5;
+            border-radius: 50%;
+        }
+        .trapezoid{
+            height: 0px;
+            width: 23px;
+            position: absolute;
+            top: 25px;
+            right: 12px;
+            transform: rotate(240deg);
+            border-bottom: 25px solid #262d3b;
+            border-left: 5px solid transparent;
+            border-right: 3px solid transparent;
+        }
+        .rectangle{
+            width: 36px;
+            height: 15px;
+            background-color: #00DAE5;
+            position: absolute;
+            top: 48px;
+            right: 17px;
+            border-bottom-right-radius: 15px;
+    
+        }
+        .half-left-circle{
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;
+            background: rgba(24, 136, 157, 0.84);
+            width: 50px;
+            height: 99px;
+            position: absolute;
+            top: 0;
+            left: 1px;
+        }
+    }
+
+
+    .letter-e-one{
+        width: 80px;
+        height: 105px;
+        position: relative;
+
+        .rectangle-one{
+            width: 60px;
+            height: 20px;
+            background: rgba(24, 136, 157, 0.84);
+            position: absolute;
+            top: 5px;
+            z-index: 1;
+        }
+
+        .rectangle-two{
+            width: 40px;
+            height: 20px;
+            background: rgba(24, 136, 157, 0.84);
+            position: absolute;
+            top: 43px;
+            z-index: 1;
+        }
+
+        .rectangle-three{
+            width: 60px;
+            height: 20px;
+            background: rgba(24, 136, 157, 0.84);
+            position: absolute;
+            bottom: 5px;
+            z-index: 1;
+        }
+        .rectangle-vertical{
+            width: 20px;
+            height: 95px;
+            background: #00DAE5;
+            position: absolute;
+            top: 5px;
+            z-index: 0;
+        }
+    }
+
+    .letter-e-two{
+        width: 80px;
+        height: 105px;
+        position: relative;
+        .rectangle-one{
+            width: 60px;
+            height: 20px;
+            background: rgba(24, 136, 157, 0.84);
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            z-index: 1;
+        }
+        .rectangle-two{
+            width: 60px;
+            height: 20px;
+            background: #00DAE5;
+            position: absolute;
+            top: 43px;
+            left: 0px;
+            z-index: 1;
+        }
+        .rectangle-three{
+            width: 60px;
+            height: 20px;
+            background: rgba(24, 136, 157, 0.84);
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            z-index: 1;
+        }
+    
+    }
+
+    .letter-k{
+        width: 85px;
+        height: 107px;
+        position: relative;
+        .rectangle-vertical{
+            width: 35px;
+            height: 97px;            
+            background: #00DAE5;            
+            position: absolute;            
+            bottom: 5px;            
+            z-index: 0;
+        }
+        .triangle-one{
+            position: absolute;
+            width: 0;            
+            height: 0;            
+            border-left: 35px solid transparent;            
+            border-right: 35px solid transparent;            
+            border-top: 50px solid rgba(24, 136, 157, 0.84);            
+            top: 4px;            
+            z-index: 100;         
+            left: 0;
+        }
+        .triangle-two{
+            position: absolute;
+            bottom: 5px;            
+            width: 0;            
+            height: 0;            
+            border-left: 35px solid transparent;            
+            border-right: 35px solid transparent;            
+            border-bottom: 50px solid rgba(24, 136, 157, 0.84);            
+            z-index: 100;
+        }    
+    }
+    .letter-t{
+        width: 90px;
+        height: 140px;
+        position: relative;
+        .rectangle-one{
+            width: 80px;
+            height: 20px;            
+            background: rgba(24, 136, 157, 0.84);            
+            position: absolute;           
+            top: 5px;            
+            left: 0px;           
+            z-index: 1;
+        }
+        .rectangle-vertical{
+            width: 25px;
+            height: 99px;            
+            background: #00DAE5;            
+            position: absolute;            
+            top: 5px;            
+            left: 27px;            
+            z-index: 0;
+    
+        }
+    
+    
+    }
+
+    .letter-s{
+        width: 125px;
+        height: 104px;
+        position: relative;
+        .half-left-circle{
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;            
+            background: #00DAE5;            
+            width: 98px;            
+            height: 75px;            
+            position: absolute;            
+            top: 0;            
+            left: 1px;
+        }
+        .half-right-circle{
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 100px;            
+            background: rgba(24, 136, 157, 0.84);            
+            width: 100px;            
+            height: 70px;            
+            position: absolute;            
+            top: 32px;            
+            left: 1px;
+        }
+    }
+
+}
+
+
+.section-header{
+    background: url("../img/bg_pattern.gif");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
