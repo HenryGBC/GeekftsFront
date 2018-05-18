@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700');
 
 body{
     background: #e6e6e6;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     padding: 0;
     margin: 0;
     color: #161621;
@@ -12,6 +12,56 @@ body{
 }
 
 
+.btn{
+    padding: 17px 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: 2px solid;
+    background-color: transparent;
+    font-weight: 100;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+
+    &.btn-primary{
+        border: 2px solid #00DAE5;
+        color: #fff;
+        background-color: #1F7277;        
+        font-weight: bold;
+
+        &:hover{
+            background-color: #278086;
+        }
+    }
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 24px;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-css{
+        margin-left: 40px;
+    }
+
+    .menu{
+        a{
+            font-size: 30px;
+            color: #fff;
+            letter-spacing: 7px;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: all .2s ease-in;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
 
 .logo-css{
     display: flex;
@@ -152,7 +202,7 @@ body{
             height: 97px;            
             background: #00DAE5;            
             position: absolute;            
-            bottom: 5px;            
+            top: 5px;            
             z-index: 0;
         }
         .triangle-one{
@@ -235,9 +285,98 @@ body{
 
 .section-header{
     background: url("../img/bg_pattern.gif");
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 40px;
+    .boxes{
+        position: relative;
+        width: 35%;
+        height: 440px;
+
+        .box-white{
+            width: 87%;
+            height: 403px;
+            background: transparent;
+            position: absolute;
+            top: -7px;
+            left: 68px;
+            z-index: 0;           
+            border: 1px solid #fff;
+        }
+        .box-green{
+            width: 85%;
+            height: 410px;
+            background: #54ADB1;
+            position: absolute;
+            right: -80px;
+            top: 20px;
+
+            h1{
+                font-size: 80px;
+                text-transform: uppercase;
+                letter-spacing: 9px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            p{
+                font-size: 49px;
+                text-align: center;
+                letter-spacing: 1px;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .shirts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        img{
+            width: 310px;
+            height: 340px;
+        }
+    }
+}
+
+
+@media (max-width: 990px) {
+
+    .section-header{
+        .boxes{
+            .box-white{
+                width: 100%;
+            }
+            .box-green{
+                width: 100%;
+            }
+        }
+
+    }
+}
+@media (max-width: 768px) {
+    .section-header{
+        flex-direction: column;
+        .boxes{
+            width: 90%;
+            margin-top: 100px;
+            .box-white{
+                width: 100%;
+                left: 0;
+            }
+            .box-green{
+                right: 12px;
+                width: 90%;
+            }
+        }
+
+        .shirts{
+            width: 90%;
+        }
+
+    }
 }
