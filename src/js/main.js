@@ -2,28 +2,37 @@ import "../scss/main.scss";
 
 (()=> {
 
-     _initContact();
+     _initGallery();
 
  })();
 
 
-function _initContact(){
+function _initGallery(){
 
     
-    let contactEl = document.getElementsByClassName("contact")
-            
-
-    for(let index = 0; index < contactEl.length; index++) {
-        contactEl[index].addEventListener("click", (e) => {
-            let formEl = document.getElementById("form");
-            formEl.classList.add("show-form");
-        });
-    }
-    document.getElementById("close")
-            .addEventListener("click", (e) => {
-                let formEl = document.getElementById("form");
-                formEl.classList.remove("show-form");
-            });
+    $('.gallery').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        lazyLoad: 'ondemand',
+        dots: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 540,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+      });
 }
 
 // const arr = [1, 2, 3];
